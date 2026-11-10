@@ -1,0 +1,6 @@
+# keep any old or shared links working
+/team       /about   301
+/reviews    /        302
+/links      /contact 302
+/home       /        301
+/index      /        301
