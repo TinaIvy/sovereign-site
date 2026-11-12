@@ -37,93 +37,93 @@
 <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:'Jost',system-ui,sans-serif;background:#fff;color:#2e3a3f;-webkit-font-smoothing:antialiased}
+body{margin:0;font-family:'Jost',system-ui,sans-serif;background:#fff;color:#232323;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 h1,h2,h3{font-family:'Montserrat',system-ui,sans-serif;font-weight:500;margin:0}
-.lbl{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#6b7479;font-weight:500}
-.rule{width:28px;height:2px;background:#5bbdbf}
-.btn{display:inline-block;background:#5bbdbf;color:#1b2a30;font-weight:500;font-size:15px;letter-spacing:.14em;text-transform:uppercase;padding:18px 40px;border-radius:4px;text-decoration:none;border:0;cursor:pointer;font-family:inherit}
+.lbl{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#6e6e6e;font-weight:500}
+.rule{width:28px;height:2px;background:#aa9262}
+.btn{display:inline-block;background:#aa9262;color:#191919;font-weight:500;font-size:15px;letter-spacing:.14em;text-transform:uppercase;padding:18px 40px;border-radius:4px;text-decoration:none;border:0;cursor:pointer;font-family:inherit}
 /* banner */
-.top{background:#fff;border-bottom:1px solid #eef0f0;position:relative;z-index:10}
+.top{background:#fff;border-bottom:1px solid #efeeeb;position:relative;z-index:10}
 .burger,.mnav{display:none}
-.band{position:relative;height:400px;background:#eef0ef url(img/hero-shepherd.jpg) 82% 48%/cover no-repeat}
+.band{position:relative;height:400px;background:#efeeeb url(img/hero-shepherd.jpg) 82% 48%/cover no-repeat}
 .hdr{max-width:1200px;margin:0 auto;padding:14px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
 .logo img{height:40px;width:auto;display:block}
 .logo span{font-family:'Montserrat',sans-serif;font-weight:500;font-size:22px;letter-spacing:.01em}
-.nav{display:flex;gap:30px;list-style:none;margin:0 0 0 auto;padding:0;font-size:15px;letter-spacing:.04em;font-weight:500;color:#2e3a3f}
+.nav{display:flex;gap:30px;list-style:none;margin:0 0 0 auto;padding:0;font-size:15px;letter-spacing:.04em;font-weight:500;color:#232323}
 .nav>li{position:relative}
 .nav a{text-decoration:none;padding:8px 0;display:inline-block}
-.nav a:hover{color:#3f8f90}
-.dd{display:none;position:absolute;top:100%;left:-14px;background:#fff;box-shadow:0 10px 30px rgba(46,58,63,.12);border-radius:6px;padding:10px 0;min-width:250px;list-style:none;margin:0;z-index:5}
+.nav a:hover{color:#7e6a3b}
+.dd{display:none;position:absolute;top:100%;left:-14px;background:#fff;box-shadow:0 10px 30px rgba(25,25,25,.12);border-radius:6px;padding:10px 0;min-width:250px;list-style:none;margin:0;z-index:5}
 .nav>li:hover .dd,.nav>li:focus-within .dd{display:block}
 .dd a{display:block;padding:9px 18px;font-size:14px}
 .call{font-size:15px;letter-spacing:.08em;text-decoration:none;font-weight:500;white-space:nowrap}
 /* hero card */
 .wrap{max-width:1100px;margin:-120px auto 0;padding:0 24px;position:relative}
-.card{background:#fff;border-radius:6px;box-shadow:0 10px 40px rgba(46,58,63,.10);padding:56px 56px 52px;display:flex;gap:56px;align-items:flex-start}
+.card{background:#fff;border-radius:6px;box-shadow:0 10px 40px rgba(25,25,25,.10);padding:56px 56px 52px;display:flex;gap:56px;align-items:flex-start}
 .copy{flex:1 1 0;min-width:0}
 .eyebrow{display:flex;align-items:center;gap:12px}
 .copy h1{margin-top:18px;font-size:40px;line-height:1.15;letter-spacing:-.01em}
-.copy p{margin:20px 0 0;font-size:18px;line-height:1.65;font-weight:300;color:#4a565b}
+.copy p{margin:20px 0 0;font-size:18px;line-height:1.65;font-weight:300;color:#4a4a4a}
 .copy p+p{margin-top:16px}
-.rate{margin-top:28px;padding-top:22px;border-top:1px solid #e6e8e8;display:flex;align-items:center;gap:16px}
+.rate{margin-top:28px;padding-top:22px;border-top:1px solid #e7e6e3;display:flex;align-items:center;gap:16px}
 .rate b{font-family:'Montserrat',sans-serif;font-size:38px;font-weight:500;line-height:1}
 .stars{color:#f2b33d;font-size:17px;letter-spacing:2px;line-height:1}
-.rate small{display:block;font-size:14px;color:#6b7479;margin-top:5px}
-.seen{margin-top:18px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#8a9296;font-weight:500;line-height:1.7}
+.rate small{display:block;font-size:14px;color:#6e6e6e;margin-top:5px}
+.seen{margin-top:18px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#8e8e8e;font-weight:500;line-height:1.7}
 .calcol{flex:0 0 440px;max-width:100%}
 .calcol h2{font-size:22px;line-height:1.25}
-.calcol .sub{font-size:14px;line-height:1.5;color:#6b7479;margin-top:6px}
-.calbox{margin-top:18px;border:1px solid #e6e8e8;border-radius:6px;overflow:hidden;background:#fff}
+.calcol .sub{font-size:14px;line-height:1.5;color:#6e6e6e;margin-top:6px}
+.calbox{margin-top:18px;border:1px solid #e7e6e3;border-radius:6px;overflow:hidden;background:#fff}
 .calbox iframe{display:block;width:100%;height:520px;border:0;overflow:hidden}
 /* sections */
 .sec{padding:88px 0 72px}
 .grey{background:#f6f6f5}
 .in{max-width:1000px;margin:0 auto;padding:0 40px;text-align:center}
 .in h2{margin-top:14px;font-size:32px;line-height:1.2}
-.lead{margin:16px auto 0;font-size:18px;line-height:1.65;font-weight:300;color:#4a565b;max-width:620px}
+.lead{margin:16px auto 0;font-size:18px;line-height:1.65;font-weight:300;color:#4a4a4a;max-width:620px}
 .three{margin-top:44px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
 .three .rule{margin:0 auto 16px}
 .three h3{font-size:19px}
-.three p{margin:8px 0 0;font-size:16px;line-height:1.6;font-weight:300;color:#4a565b}
-.note{margin-top:34px;font-size:14px;color:#8a9296;letter-spacing:.04em}
+.three p{margin:8px 0 0;font-size:16px;line-height:1.6;font-weight:300;color:#4a4a4a}
+.note{margin-top:34px;font-size:14px;color:#8e8e8e;letter-spacing:.04em}
 .proof{display:flex;gap:56px;align-items:center;text-align:left}
 .proof img{flex:0 0 400px;width:400px;height:300px;object-fit:cover;border-radius:6px}
 .proof h2{margin-top:14px}
-.proof p{margin:16px 0 0;font-size:18px;line-height:1.65;font-weight:300;color:#4a565b}
-.pill{margin-top:24px;display:inline-flex;align-items:center;gap:14px;padding:16px 26px;border:1px solid #e6e8e8;border-radius:6px;font-size:15px;color:#2e3a3f;text-align:left}
+.proof p{margin:16px 0 0;font-size:18px;line-height:1.65;font-weight:300;color:#4a4a4a}
+.pill{margin-top:24px;display:inline-flex;align-items:center;gap:14px;padding:16px 26px;border:1px solid #e7e6e3;border-radius:6px;font-size:15px;color:#232323;text-align:left}
 .reviews{padding:72px 0}
 .revframe{margin-top:28px;text-align:center}
 .vids{margin-top:34px;display:flex;justify-content:center;gap:28px;flex-wrap:wrap}
 .vc{width:210px}
-.tc{position:relative;display:block;width:100%;aspect-ratio:4/5;border-radius:6px;overflow:hidden;cursor:pointer;background:#e9eeee center/cover no-repeat;border:0;padding:0}
-.play{position:absolute;left:10px;bottom:10px;height:36px;padding:0 14px 0 10px;border-radius:18px;background:#5bbdbf;color:#1b2a30;display:flex;align-items:center;gap:6px;font:500 13px 'Jost',sans-serif;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 4px 14px rgba(13,182,194,.35)}
-.tc::after{content:'';position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(transparent,rgba(20,30,34,.35))}
+.tc{position:relative;display:block;width:100%;aspect-ratio:4/5;border-radius:6px;overflow:hidden;cursor:pointer;background:#ebeae7 center/cover no-repeat;border:0;padding:0}
+.play{position:absolute;left:10px;bottom:10px;height:36px;padding:0 14px 0 10px;border-radius:18px;background:#aa9262;color:#191919;display:flex;align-items:center;gap:6px;font:500 13px 'Jost',sans-serif;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 4px 14px rgba(170,146,98,.35)}
+.tc::after{content:'';position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(transparent,rgba(15,15,15,.35))}
 .play{z-index:1}
-.tc:hover .play{background:#6cc7c9}
-.cap{margin-top:12px;font-size:15px}.cap b{font-weight:500;display:block}.cap span{color:#6b7479;font-size:14px}
+.tc:hover .play{background:#b9a474}
+.cap{margin-top:12px;font-size:15px}.cap b{font-weight:500;display:block}.cap span{color:#6e6e6e;font-size:14px}
 .steps{margin-top:44px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
-.steps i{font-style:normal;font-family:'Montserrat',sans-serif;font-size:44px;color:#5bbdbf;font-weight:500;line-height:1;display:block}
+.steps i{font-style:normal;font-family:'Montserrat',sans-serif;font-size:44px;color:#aa9262;font-weight:500;line-height:1;display:block}
 .steps h3{margin-top:8px;font-family:'Jost',sans-serif;font-size:18px;font-weight:500}
-.steps p{margin:6px 0 0;font-size:16px;line-height:1.6;font-weight:300;color:#4a565b}
+.steps p{margin:6px 0 0;font-size:16px;line-height:1.6;font-weight:300;color:#4a4a4a}
 .faq{max-width:760px;margin:0 auto;padding:0 40px}
 .faq h2{text-align:center;font-size:32px;margin-bottom:28px}
-.fi{border-bottom:1px solid #dfe3e3}
-.faq .list{border-top:1px solid #dfe3e3}
-.fq{width:100%;background:none;border:0;text-align:left;padding:20px 4px;font:500 18px 'Jost',sans-serif;color:#2e3a3f;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center}
-.fq svg{width:18px;height:18px;flex:0 0 18px;fill:none;stroke:#6b7479;stroke-width:2;transition:transform .25s}
+.fi{border-bottom:1px solid #dedcd8}
+.faq .list{border-top:1px solid #dedcd8}
+.fq{width:100%;background:none;border:0;text-align:left;padding:20px 4px;font:500 18px 'Jost',sans-serif;color:#232323;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.fq svg{width:18px;height:18px;flex:0 0 18px;fill:none;stroke:#6e6e6e;stroke-width:2;transition:transform .25s}
 .fi.open .fq svg{transform:rotate(180deg)}
 .fb{max-height:0;overflow:hidden;transition:max-height .3s ease}
-.fb div{padding:0 4px 20px;font-size:16px;line-height:1.65;font-weight:300;color:#4a565b}
+.fb div{padding:0 4px 20px;font-size:16px;line-height:1.65;font-weight:300;color:#4a4a4a}
 .close{padding:80px 0;text-align:center}
 .close h2{font-size:32px;line-height:1.2}
 .close .btn{margin-top:26px}
-.close p{margin:16px 0 0;font-size:15px;color:#6b7479}
-footer{padding:28px 20px 90px;text-align:center;font-size:13px;color:#8a9296}
+.close p{margin:16px 0 0;font-size:15px;color:#6e6e6e}
+footer{padding:28px 20px 90px;text-align:center;font-size:13px;color:#8e8e8e}
 .sticky{display:none}
 /* video lightbox */
-.lbx{display:none;position:fixed;inset:0;background:rgba(20,30,34,.82);z-index:50;align-items:center;justify-content:center;padding:20px}
+.lbx{display:none;position:fixed;inset:0;background:rgba(15,15,15,.82);z-index:50;align-items:center;justify-content:center;padding:20px}
 .lbx.open{display:flex}
 .lbi{position:relative;width:100%;max-width:900px}
 .lbx.portrait .lbi{max-width:420px}
@@ -133,11 +133,11 @@ footer{padding:28px 20px 90px;text-align:center;font-size:13px;color:#8a9296}
 .lbc{position:absolute;right:0;top:-40px;background:none;border:0;color:#fff;font-size:26px;cursor:pointer}
 @media(max-width:900px){
  .burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;background:none;border:0;padding:8px;cursor:pointer}
- .burger i{display:block;height:2px;background:#2e3a3f;border-radius:2px}
+ .burger i{display:block;height:2px;background:#232323;border-radius:2px}
  .hdr{gap:12px}.call{margin-left:auto}
- .mnav.open{display:block;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid #e6e8e8;box-shadow:0 14px 30px rgba(46,58,63,.12);padding:6px 20px 14px}
- .mnav a{display:block;padding:13px 0;font-size:16px;font-weight:500;text-decoration:none;border-bottom:1px solid #f0f2f2}
- .mnav a.sub{padding-left:16px;font-weight:400;font-size:15px;color:#4a565b}
+ .mnav.open{display:block;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid #e7e6e3;box-shadow:0 14px 30px rgba(25,25,25,.12);padding:6px 20px 14px}
+ .mnav a{display:block;padding:13px 0;font-size:16px;font-weight:500;text-decoration:none;border-bottom:1px solid #f1f0ed}
+ .mnav a.sub{padding-left:16px;font-weight:400;font-size:15px;color:#4a4a4a}
 
  .band{height:230px;background-position:82% center}
  .hdr{padding:12px 16px}
@@ -162,48 +162,48 @@ footer{padding:28px 20px 90px;text-align:center;font-size:13px;color:#8a9296}
  .vc{width:100%;max-width:260px}
  .faq{padding:0 22px}.fq{font-size:17px}
  .close{padding:50px 0}
- .sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;gap:10px;background:#fff;border-top:1px solid #e6e8e8;padding:10px 14px;box-shadow:0 -6px 20px rgba(46,58,63,.06)}
+ .sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;gap:10px;background:#fff;border-top:1px solid #e7e6e3;padding:10px 14px;box-shadow:0 -6px 20px rgba(25,25,25,.06)}
  .sticky .btn{flex:1;text-align:center;padding:15px 0;font-size:14px}
- .sticky .c{flex:0 0 auto;display:flex;align-items:center;border:1px solid #d5dadc;border-radius:4px;padding:0 18px;font-weight:500;font-size:14px;letter-spacing:.1em;text-decoration:none;text-transform:uppercase}
+ .sticky .c{flex:0 0 auto;display:flex;align-items:center;border:1px solid #d9d8d4;border-radius:4px;padding:0 18px;font-weight:500;font-size:14px;letter-spacing:.1em;text-decoration:none;text-transform:uppercase}
 }
 @media(min-width:901px){.band{background:#e9e5de url(/img/hero-shepherd-w3.jpg) right 40%/cover no-repeat !important;height:460px !important}}.nav a,.call,.hdr .btn{white-space:nowrap}@media(max-width:1150px){.nav{gap:16px!important;font-size:14px!important}.call{font-size:13px!important;letter-spacing:.04em!important}.hdr{padding-left:20px!important;padding-right:20px!important;gap:14px!important}.hdr .btn.sm{padding:10px 14px!important}}
-.mcard{display:block;text-decoration:none;border:1px solid #e6e8e8;border-radius:6px;padding:24px;background:#fff}
-.mcard:hover{border-color:#5bbdbf}
-.mcard h3{font-size:18px;margin-top:12px}.mcard p{font-size:15px;line-height:1.6;font-weight:300;color:#4a565b;margin:10px 0 0}
-.mcard .more{display:inline-block;margin-top:14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:#3f8f90}
+.mcard{display:block;text-decoration:none;border:1px solid #e7e6e3;border-radius:6px;padding:24px;background:#fff}
+.mcard:hover{border-color:#aa9262}
+.mcard h3{font-size:18px;margin-top:12px}.mcard p{font-size:15px;line-height:1.6;font-weight:300;color:#4a4a4a;margin:10px 0 0}
+.mcard .more{display:inline-block;margin-top:14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:#7e6a3b}
 .cg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:30px}
 .tq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:30px}
-.tq blockquote{margin:0;border-left:2px solid #5bbdbf;padding:4px 0 4px 18px;font-size:16px;line-height:1.65;font-weight:300;color:#4a565b}
-.tq cite{display:block;font-style:normal;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#6b7479;margin-top:10px}
+.tq blockquote{margin:0;border-left:2px solid #aa9262;padding:4px 0 4px 18px;font-size:16px;line-height:1.65;font-weight:300;color:#4a4a4a}
+.tq cite{display:block;font-style:normal;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#6e6e6e;margin-top:10px}
 .prob li{padding-bottom:8px}
-.badges{margin-top:22px;padding-top:20px;border-top:1px solid #e6e8e8;display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.badges{margin-top:22px;padding-top:20px;border-top:1px solid #e7e6e3;display:flex;align-items:center;gap:28px;flex-wrap:wrap}
 .badges img{height:62px;width:auto;display:block}
-.bbb{display:flex;align-items:center;gap:10px}.bbb span{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#6b7479;font-weight:500;line-height:1.2}.bbb span b{display:block;font-family:'Montserrat',sans-serif;font-size:26px;letter-spacing:0;color:#2e3a3f;font-weight:500}
+.bbb{display:flex;align-items:center;gap:10px}.bbb span{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#6e6e6e;font-weight:500;line-height:1.2}.bbb span b{display:block;font-family:'Montserrat',sans-serif;font-size:26px;letter-spacing:0;color:#232323;font-weight:500}
 .mcard .cpic{width:120px;height:120px;object-fit:cover;border-radius:6px;display:block;margin:0 0 4px}
-.fnd{display:grid;grid-template-columns:260px 1fr;gap:44px;align-items:center;text-align:left}.fnd img{width:100%;height:auto;display:block;background:#eaf3f3;border-radius:8px}
+.fnd{display:grid;grid-template-columns:260px 1fr;gap:44px;align-items:center;text-align:left}.fnd img{width:100%;height:auto;display:block;background:#f3eee3;border-radius:8px}
 @media(max-width:700px){.fnd{grid-template-columns:1fr;text-align:center}.fnd img{max-width:220px;margin:0 auto}}
-.mf{background:#f6f6f5;padding:44px 20px 100px;font-size:14px;color:#4a565b;margin-top:0}
+.mf{background:#f6f6f5;padding:44px 20px 100px;font-size:14px;color:#4a4a4a;margin-top:0}
 .mf .ft{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
-.mf b{display:block;font-family:'Montserrat',sans-serif;font-weight:500;font-size:14px;color:#2e3a3f;margin-bottom:10px}
+.mf b{display:block;font-family:'Montserrat',sans-serif;font-weight:500;font-size:14px;color:#232323;margin-bottom:10px}
 .mf a{display:block;text-decoration:none;padding:3px 0}
-.mf .cp{max-width:1000px;margin:30px auto 0;padding-top:18px;border-top:1px solid #e1e4e4;font-size:13px;color:#8a9296}
+.mf .cp{max-width:1000px;margin:30px auto 0;padding-top:18px;border-top:1px solid #e3e2de;font-size:13px;color:#8e8e8e}
 .hdr .btn.sm{padding:11px 20px;font-size:12px}
 @media(max-width:900px){.hbtn{display:none}}
 @media(max-width:900px){.cg{grid-template-columns:repeat(2,minmax(0,1fr))}.tq{grid-template-columns:1fr}.mf .ft{grid-template-columns:1fr}}
 @media(max-width:560px){.cg{grid-template-columns:1fr}}
-@media(max-width:900px){.hdr{padding:12px 14px!important;gap:6px!important}.logo span{font-size:18px!important}.logo img{height:34px!important}.call{font-size:12px!important;letter-spacing:.02em!important;white-space:nowrap}.burger{flex:0 0 40px!important}}@media(max-width:360px){.logo span{font-size:16px!important}.call{font-size:11px!important}}</style>
+@media(max-width:900px){.hdr{padding:12px 14px!important;gap:6px!important}.logo span{font-size:18px!important}.logo img{height:34px!important}.call{font-size:12px!important;letter-spacing:.02em!important;white-space:nowrap}.burger{flex:0 0 40px!important}}@media(max-width:360px){.logo span{font-size:16px!important}.call{font-size:11px!important}}.btn:hover{background:#b9a474}</style>
 <meta name="description" content="In-home dog training in Tampa Bay. Your trainer comes to your home. Book a free Zoom consultation to get a clear plan and a personalized quote."><link rel="canonical" href="https://sovereigndogtraining.com/"><style>
 .logo span{font-size:20px;white-space:nowrap}
 @media(max-width:560px){.logo span{font-size:15px}}
-.lpts{list-style:none;margin:28px 0 0;padding:22px 0 0;border-top:1px solid #e6e8e8}
-.lpts li{position:relative;padding:0 0 10px 24px;font-size:15px;line-height:1.5;color:#2e3a3f}
-.lpts li::before{content:'';position:absolute;left:0;top:10px;width:10px;height:2px;background:#5bbdbf}
+.lpts{list-style:none;margin:28px 0 0;padding:22px 0 0;border-top:1px solid #e7e6e3}
+.lpts li{position:relative;padding:0 0 10px 24px;font-size:15px;line-height:1.5;color:#232323}
+.lpts li::before{content:'';position:absolute;left:0;top:10px;width:10px;height:2px;background:#aa9262}
 .callfb{padding:28px 24px;text-align:center}
-.callfb b{display:block;font-family:'Montserrat',sans-serif;font-weight:500;font-size:19px;line-height:1.3;color:#2e3a3f}
-.callfb p{margin:10px 0 0;font-size:15px;line-height:1.55;color:#6b7479}
+.callfb b{display:block;font-family:'Montserrat',sans-serif;font-weight:500;font-size:19px;line-height:1.3;color:#232323}
+.callfb p{margin:10px 0 0;font-size:15px;line-height:1.55;color:#6e6e6e}
 .callfb .btn{display:block;margin:16px 0 0;padding:16px 20px;text-align:center;white-space:normal}
-.callfb .btn.alt{background:#fff;border:1px solid #5bbdbf;color:#2e3a3f}
-.callfb .em{display:block;margin-top:16px;font-size:15px;color:#2e3a3f;word-break:break-all}
+.callfb .btn.alt{background:#fff;border:1px solid #aa9262;color:#232323}
+.callfb .em{display:block;margin-top:16px;font-size:15px;color:#232323;word-break:break-all}
 .abt{display:flex;gap:30px;align-items:flex-start;margin-top:18px}
 .abt img{flex:0 0 250px;width:250px;max-width:40%;height:auto;display:block}
 .abt p:first-child{margin-top:0}
@@ -282,8 +282,8 @@ footer{padding:28px 20px 90px;text-align:center;font-size:13px;color:#8a9296}
 <div><div class="rule"></div><h3>Frustrated and helpless</h3><p>The constant struggle wears you down, and you just don’t know how to change the situation.</p></div>
 <div><div class="rule"></div><h3>Embarrassed and afraid</h3><p>Your dog’s behavior is embarrassing, and maybe you are even afraid of what they will do next.</p></div>
 <div><div class="rule"></div><h3>Guilty</h3><p>You feel like you are not a good dog parent, and that you failed your dog.</p></div></div>
-<p style="margin-top:28px;font-size:17px;line-height:1.7;font-weight:300;color:#4a565b">To make matters worse, you may have hired a “professional” dog trainer, your dog learned a few obedience commands, and the core behavior issues did not change. Precious time, money and effort wasted, and the frustration only increases. You might start to think your dog is just “untrainable”.</p>
-<p style="margin-top:14px;font-size:17px;line-height:1.7;font-weight:300;color:#4a565b">Imagine if you could just tell your dog “no” and they would listen to you, every time, not just when they feel like it. A real companion, a team player.</p>
+<p style="margin-top:28px;font-size:17px;line-height:1.7;font-weight:300;color:#4a4a4a">To make matters worse, you may have hired a “professional” dog trainer, your dog learned a few obedience commands, and the core behavior issues did not change. Precious time, money and effort wasted, and the frustration only increases. You might start to think your dog is just “untrainable”.</p>
+<p style="margin-top:14px;font-size:17px;line-height:1.7;font-weight:300;color:#4a4a4a">Imagine if you could just tell your dog “no” and they would listen to you, every time, not just when they feel like it. A real companion, a team player.</p>
 </div></section>
 <section class="grey" style="padding:72px 0"><div class="in">
 <div class="lbl">Why traditional training often fails</div><h2>3 common misconceptions about dog training</h2>
@@ -312,7 +312,7 @@ footer{padding:28px 20px 90px;text-align:center;font-size:13px;color:#8a9296}
 <div class="lbl">A note from Sam</div><h2 style="margin-top:12px">Don’t give up on your dog</h2>
 <p class="lead">No matter how frustrated you may be at the moment, you can re-build your relationship with your dog. If your dog is not listening to you, it’s not because there is something “wrong” with your dog. It’s because no one has taught you how to control their behavior.</p>
 <p class="lead" style="margin-top:14px">I come to your home, see how you and your dog actually live, and coach you in person, so the changes stick long after our sessions end.</p>
-<p style="margin-top:22px"><a class="btn" href="/about" style="background:#fff;border:1px solid #d5dadc;color:#2e3a3f">Meet Sam</a></p>
+<p style="margin-top:22px"><a class="btn" href="/about" style="background:#fff;border:1px solid #d9d8d4;color:#232323">Meet Sam</a></p>
 </div></div></section>
 <section class="sec" style="padding-top:80px">
   <div class="in">
