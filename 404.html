@@ -103,7 +103,7 @@ footer{margin-top:70px;background:#f6f6f5;padding:44px 20px 100px;font-size:14px
 .pop-x{position:absolute;right:12px;top:8px;background:none;border:0;font-size:24px;cursor:pointer;color:#6e6e6e}
 .pop-in h3{font-size:20px;line-height:1.3;padding-right:24px}
 .pop-in .s{font-size:14px;color:#6e6e6e;margin-top:6px}
-.pop-in iframe{display:block;width:100%;height:560px;border:0;margin-top:14px}
+.pop-in iframe{display:block;width:100%;height:760px;border:0;margin-top:14px}.callnote{margin:14px 0 0;font-size:14px;line-height:1.55;color:#6e6e6e;text-align:center}.callnote a{color:#7e6a3b;text-decoration:underline}
 @media(max-width:900px){
  .hdr{padding:12px 16px;gap:12px}
  .nav,.hdr .btn.sm{display:none}
@@ -124,7 +124,7 @@ footer{margin-top:70px;background:#f6f6f5;padding:44px 20px 100px;font-size:14px
  .sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;gap:10px;background:#fff;border-top:1px solid #e7e6e3;padding:10px 14px;box-shadow:0 -6px 20px rgba(25,25,25,.06)}
  .sticky .btn{flex:1;text-align:center;padding:15px 0;font-size:14px}
  .sticky .c{flex:0 0 auto;display:flex;align-items:center;border:1px solid #d9d8d4;border-radius:4px;padding:0 18px;font-weight:500;font-size:14px;letter-spacing:.1em;text-decoration:none;text-transform:uppercase}
- .pop-in iframe{height:620px}
+ .pop-in iframe{height:760px}
 }
 @media(min-width:901px){.band{background:#e9e5de url(/img/hero-shepherd-w3.jpg) right 40%/cover no-repeat !important;height:400px !important}}.nav a,.call,.hdr .btn{white-space:nowrap}@media(max-width:1150px){.nav{gap:16px!important;font-size:14px!important}.call{font-size:13px!important;letter-spacing:.04em!important}.hdr{padding-left:20px!important;padding-right:20px!important;gap:14px!important}.hdr .btn.sm{padding:10px 14px!important}}.pic{float:right;width:190px;height:190px;margin:-4px 0 14px 24px}.card .cpic{width:120px;height:120px;margin:0 0 14px}.info .ipic{width:96px;height:96px;display:block;margin-bottom:14px}@media(max-width:900px){.pic{width:120px;height:120px;margin-left:14px}}.tm .qt{font-size:14px!important;line-height:1.5!important;font-style:italic;margin:12px 0 0!important;color:#4a4a4a}.tm .qt span{display:block;font-style:normal;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#6e6e6e;margin-top:6px}.tgrid{margin-top:30px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px 18px}.tm{text-align:center}.tm .ph{aspect-ratio:1;object-fit:cover;border-radius:50%}.tm h3{font-size:17px;margin-top:12px}.tm .role{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#6e6e6e;margin-top:4px}.tm .pw{position:relative;width:170px;max-width:100%;margin:0 auto}.tm .pw .ph{display:block;width:100%}.tm .dg{position:absolute;right:-6px;bottom:-4px;width:34%;height:auto;aspect-ratio:1;border-radius:50%;object-fit:cover;background:#fff;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.18)}@media(max-width:900px){.tgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:900px){.hdr{padding:12px 14px!important;gap:6px!important}.logo span{font-size:18px!important}.logo img{height:34px!important}.call{font-size:12px!important;letter-spacing:.02em!important;white-space:nowrap}.burger{flex:0 0 40px!important}}@media(max-width:360px){.logo span{font-size:16px!important}.call{font-size:11px!important}}.btn:hover{background:#b9a474}</style><style>
 .logo span{font-size:20px;white-space:nowrap}
@@ -157,7 +157,7 @@ footer{margin-top:70px;background:#f6f6f5;padding:44px 20px 100px;font-size:14px
 <div class="pop" id="pop" role="dialog" aria-modal="true"><div class="pop-in"><button class="pop-x" id="popX" aria-label="Close">×</button>
 <h3>Book your free consultation</h3><div class="s">30 to 60 minutes on Zoom with a dog behavior specialist. Join with your significant other if you can.</div><div id="popCal"></div></div></div>
 <script>(function(){
-  var V = (window.LP && window.LP.version) || 'sub', LPID = window.LP.id, ATTR = window.LP.attr, CAL = 'gw1t2xLGgfS3J024jQ7M';
+  var V = (window.LP && window.LP.version) || 'sub', LPID = window.LP.id, ATTR = window.LP.attr;
   function track(n,p){ p=p||{}; p.lp_version=V; try{ gtag('event',n,p);}catch(e){} }
   track('lp_view');
   /* mobile menu */
@@ -176,13 +176,7 @@ footer{margin-top:70px;background:#f6f6f5;padding:44px 20px 100px;font-size:14px
   /* booking popup (calendar loads when opened) */
   var pop=document.getElementById('pop'),box=document.getElementById('popCal');
   function openPop(src){
-    if(!box.firstChild){ box.innerHTML="<div class=\"callfb\"><b>Call or text to book your free Zoom consultation</b><p>Tell us a little about you and your dog and we will find a time that works for you.</p><a class=\"btn\" href=\"tel:+18138924072\" data-loc=\"booking\">Call 813 892 4072</a><a class=\"btn alt\" href=\"sms:+18138924072\" data-loc=\"booking-text\">Text us</a><a class=\"em\" href=\"mailto:sam@sovereigndogtraining.com\">sam@sovereigndogtraining.com</a></div>"; } else if(false){
-      var f=document.createElement('iframe'),p=new URLSearchParams();
-      p.set('lp_id',LPID);p.set('lp_version',V);Object.keys(ATTR).forEach(function(k){p.set(k,ATTR[k]);});
-      f.id=CAL+'_'+Date.now();f.title='Book your free consultation';f.setAttribute('allow','payment');f.setAttribute('scrolling','no');
-      f.src=''+CAL+'?'+p.toString();
-      box.appendChild(f);
-    }
+    if(!box.firstChild){ box.innerHTML='<iframe src="https://tyonilo.com/book.html" title="Book a free consultation with Sovereign Dog Training" loading="lazy"></iframe><p class="callnote">Prefer to talk? Call or text <a href="tel:+18138924072" data-loc="booking">813 892 4072</a> or email <a href="mailto:sam@sovereigndogtraining.com">sam@sovereigndogtraining.com</a>.</p>'; }
     pop.classList.add('open');document.body.style.overflow='hidden';
     track('book_now_click',{location:src||'page'});
   }
@@ -193,7 +187,7 @@ footer{margin-top:70px;background:#f6f6f5;padding:44px 20px 100px;font-size:14px
   document.addEventListener('keydown',function(e){if(e.key==='Escape')closePop();});
   /* booking finished: move the whole window to /thank-you */
   window.addEventListener('message',function(e){
-    if(e.origin===location.origin&&e.data&&e.data.type==='lp-thankyou')location.href='/thank-you';
+    if((e.origin===location.origin||e.origin==='https://tyonilo.com')&&e.data&&e.data.type==='lp-thankyou')location.href='/thank-you';
   });
   document.addEventListener('click',function(e){
     var a=e.target.closest&&e.target.closest('a[href^="tel:"]');

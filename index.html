@@ -76,7 +76,7 @@ h1,h2,h3{font-family:'Montserrat',system-ui,sans-serif;font-weight:500;margin:0}
 .calcol h2{font-size:22px;line-height:1.25}
 .calcol .sub{font-size:14px;line-height:1.5;color:#6e6e6e;margin-top:6px}
 .calbox{margin-top:18px;border:1px solid #e7e6e3;border-radius:6px;overflow:hidden;background:#fff}
-.calbox iframe{display:block;width:100%;height:520px;border:0;overflow:hidden}
+.calbox iframe{display:block;width:100%;height:820px;border:0;overflow:hidden}.callnote{margin:14px 0 0;font-size:14px;line-height:1.55;color:#6e6e6e;text-align:center}.callnote a{color:#7e6a3b;text-decoration:underline}
 /* sections */
 .sec{padding:88px 0 72px}
 .grey{background:#f6f6f5}
@@ -238,7 +238,7 @@ footer{padding:28px 20px 90px;text-align:center;font-size:13px;color:#8e8e8e}
     <div class="calcol" id="calendar">
       <h2>Book your free Zoom consultation</h2>
       <div class="sub">30 to 60 minutes on Zoom with a dog behavior specialist. Join with your significant other if you can.</div>
-      <div class="calbox"><!-- BOOKING CALENDAR PLACEHOLDER: replace this card with the new calendar embed when it exists --><div class="callfb"><b>Call or text to book your free Zoom consultation</b><p>Tell us a little about you and your dog and we will find a time that works for you.</p><a class="btn" href="tel:+18138924072" data-loc="booking">Call 813 892 4072</a><a class="btn alt" href="sms:+18138924072" data-loc="booking-text">Text us</a><a class="em" href="mailto:sam@sovereigndogtraining.com">sam@sovereigndogtraining.com</a></div></div>
+      <div class="calbox"><iframe src="https://tyonilo.com/book.html" title="Book a free consultation with Sovereign Dog Training" style="width:100%;height:820px;border:0" loading="lazy"></iframe></div><p class="callnote">Prefer to talk? Call or text <a href="tel:+18138924072" data-loc="booking">813 892 4072</a> or email <a href="mailto:sam@sovereigndogtraining.com">sam@sovereigndogtraining.com</a>.</p>
     </div>
   </div>
 </div>
@@ -364,7 +364,7 @@ footer{padding:28px 20px 90px;text-align:center;font-size:13px;color:#8e8e8e}
 
   /* ---- booking finished inside the iframe: move the whole window to /thank-you ---- */
   window.addEventListener('message', function(e){
-    if (e.origin === location.origin && e.data && e.data.type === 'lp-thankyou') { location.href = '/thank-you'; return; }
+    if ((e.origin === location.origin || e.origin === 'https://tyonilo.com') && e.data && e.data.type === 'lp-thankyou') { location.href = '/thank-you'; return; }
     if (location.search.indexOf('lpdebug=1') > -1 && e.origin.indexOf('sovereigndogtraining.com') > -1) {
       window.dataLayer.push({event: 'ghl_message_debug', ghl_data: JSON.stringify(e.data).slice(0, 500)});
       try{ console.log('GHL message', e.data); }catch(x){}
